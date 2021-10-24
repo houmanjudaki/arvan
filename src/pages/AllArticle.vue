@@ -1,21 +1,12 @@
 <template>
-  <h2>AllArticle Page</h2>
-  {{ count }}
+   <h3> all article </h3>
+
 </template>
 
 <script>
-import { computed } from '@vue/runtime-core'
-import { useStore } from 'vuex'
-export default {
-  setup() {
-    const store = useStore()
-    const count = computed(()=> store.state.count)
-    
-    return{
-      count
-    }
 
-  }
+export default {
+ 
 }
 </script>
 

@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AllArticle from './pages/AllArticle'
+import AllArticle from './pages/AllArticle.vue'
+import NewArticle from './pages/NewArticle.vue'
 const routes = [
-    {name: 'dashboard' , path: '/' , component: AllArticle}
+    {name: 'AllArticle' , path: '/' , component: AllArticle},
+    {name: 'NewArticle' , path: '/NewArticle' , component: NewArticle}
 ]
 
 const router = createRouter({
