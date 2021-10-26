@@ -23,12 +23,14 @@
           >
           <small class="form-text text-danger">Required Field  </small>
         </div>
-        <button
-          class="btn btn-primary btn-block Rectangle-104"
-          type="submit"
-        >
-          Submit
-        </button>
+        <router-link to="/">
+          <button
+            class="btn btn-primary btn-block Rectangle-104"
+            type="submit"
+          >
+            Submit
+          </button>
+        </router-link>
         <span class="Dont-have-account Text-Style">
           Don’t have account?
         </span>
