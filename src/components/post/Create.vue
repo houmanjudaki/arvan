@@ -172,10 +172,10 @@
 
 <script>
 import { ref } from '@vue/reactivity';
-// import { useStore } from 'vuex';
+import { useStore } from 'vuex';
 export default {
   setup() {
-    // const store = useStore();
+    const store = useStore();
     const title = ref('');
     const titleErrorText = ref('');
     
@@ -184,6 +184,7 @@ export default {
         titleErrorText.value = 'Title is required';
       } else {
         titleErrorText.value = '';
+        store.dispatch('storePost', title.value);
       }
     }
     return {

@@ -49,9 +49,6 @@
         </div>
       </nav>
     </div>
-    <div class="col">
-      ja
-    </div>
   </div>
 </template>
 

@@ -23,6 +23,17 @@ const store = createStore({
       } catch (error) {
         console.log(error);
       }
+    },
+    async storePosts({ commit }, title) {
+      try {
+        const response = await axios.post('https://jsonplaceholder.typicode.com/todos', {
+          title:title
+        });
+        // commit('setPosts', response.data);
+        console.log(response, commit);
+      } catch (error) {
+        console.log(error);
+      }
     }
   }
 });
