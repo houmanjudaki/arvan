@@ -1,10 +1,10 @@
 <template>
-  <div class="row">
-    <div class="col">
+  <div class="d-flex justify-content-center px-4">
+    <div>
       <span class="New-Article">
         New Article
       </span>
-      <div col-lg-4>
+      <div>
         <form @submit.prevent="storePost">
           <div class="form-group ">
             <label for="title">Title </label>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="col">
+    <div>
       <div class="form-group">
         <label
           for="tags"
@@ -184,7 +184,7 @@ export default {
         titleErrorText.value = 'Title is required';
       } else {
         titleErrorText.value = '';
-        store.dispatch('storePost', title.value);
+        store.dispatch('post/storePost', title.value);
       }
     }
     return {
@@ -200,58 +200,10 @@ export default {
 
 <style>
 .New-Article {
-  width: 204px;
-  height: 47px;
-  margin: 25px 666px 18px 30px;
+ 
   font-family: HelveticaNeue;
-  font-size: 40px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
+ 
   color: #000;
 }
-.Rectangle-195 {
-  width: 848px;
-  height: 40px;
-  margin: 8px 0 0;
-  padding: 11px 805px 11px 12px;
-}
-.Rectangle-196 {
-   width: 847px;
-  height: 207px;
-  margin: 8px 0 0;
-}
-.Rectangle-334 {
-  width: 252px;
-  height: 40px;
-  margin: 14px 29px 6px 31px;
-  padding: 11px 180px 11px 12px;
- 
-}
-.R334 {
-  margin: 14px 29px 6px 31px;
-  padding: 11px 180px 11px 12px;
- 
-}
-.Rectangle-334 {
-  width: 252px;
-  height: 40px;
-  margin: 14px 29px 6px 31px;
-  padding: 11px 180px 11px 12px;
-  border-radius: 4px;
-  border: solid 1px #ddd;
-  background-color: #fff;
-}
-.Rectangle-197 {
-  width: 251.5px;
-  height: 355px;
-  margin: 14px 29.5px 15px 31px;
-  padding: 15px 187.5px 16px 17px;
-  border-radius: 4px;
-  border: solid 1px #ddd;
-  background-color: #fff;
-}
+
 </style>
