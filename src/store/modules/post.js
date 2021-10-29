@@ -43,6 +43,7 @@ const post = {
         });
         commit('newPost', response.data);
         console.log(response, commit);
+        localStorage.setItem('post',JSON.stringify(post));
       } catch (error) {
         console.log(error);
       }

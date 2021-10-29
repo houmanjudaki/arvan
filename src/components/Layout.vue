@@ -17,7 +17,7 @@
     </div>
   </nav>
 
-  <div class="d-flex ">
+  <div class="sidebarr d-flex ">
     <div class="">
       <nav
         id="sidebarMenu"
@@ -50,7 +50,7 @@
       </nav>
     </div>
 
-    <div class="">
+    <div class="col ">
       <router-view />
     </div>
   </div>
@@ -97,6 +97,11 @@ export default {
 
   font-family: HelveticaNeue;
   
+}
+@media (width:576px){
+  .sidebarr{
+    display: block;
+}
 }
 
 

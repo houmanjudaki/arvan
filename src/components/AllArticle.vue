@@ -1,10 +1,10 @@
 <template>
-  <div class=" d-flex flex-column  ">
+  <div class="container">
     <span class="All-Posts">
       All Posts
     </span>     
-    <table class="w-100 h-100">
-      <thead class="Rectangle-27 Excerpt">
+    <table class=" w-100 h-100  ">
+      <thead class=" Rectangle-27 Excerpt">
         <tr>
           <th scope="col">
             #
