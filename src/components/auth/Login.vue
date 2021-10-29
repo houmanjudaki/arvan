@@ -1,5 +1,5 @@
 <template>
-  <div class="card Rectangle-273">
+  <div class="card Rectangle-272">
     <div class="card-body">
       <form>
         <span class="LOGIN">
@@ -35,7 +35,7 @@
           Don’t have account?
         </span>
 
-        <router-link to="/Register">
+        <router-link to="/auth/Register">
           <span class="Register-Now">
             Register Now
           </span>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style>
-.Rectangle-273 {
+.Rectangle-272 {
   width: 450px;
   height: 423px;
   margin: 0 0 194px 451px;
@@ -78,7 +78,6 @@ export default {
   width: 410px;
   height: 40px;
   margin: 28px 0 14px;
-  padding: ;
   border-radius: 4px;
 
 }

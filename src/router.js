@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AllArticle from './pages/AllArticle.vue';
-import NewArticle from './pages/NewArticle.vue';
-import Login from './pages/auth/Login.vue';
-import Register from './pages/auth/Register.vue';
+
+import AllArticle from './components/AllArticle.vue';
+import NewArticle from './components/NewArticle.vue';
+import Login from './components/auth/Login.vue';
+import Register from './components/auth/Register.vue';
+
 const routes = [
   {name: 'AllArticle' , path: '/' , component: AllArticle},
   {name: 'NewArticle' , path: '/NewArticle' , component: NewArticle},
-  {name: 'Login' , path: '/Login' , component: Login},
-  {name: 'Register' , path: '/Register' , component: Register}
+  {name: 'Login' , path: '/auth/Login' , component: Login},
+  {name: 'Register' , path: '/auth/Register' , component: Register}
 ];
 
 const router = createRouter({

@@ -6,7 +6,7 @@
       <span class="Welcome-username-">
         Welcome {{ username }}
       </span>
-      <router-link to="/Login">
+      <router-link to="/auth/Login">
         <button
           type="button"
           class=" ms-auto btn btn-outline-primary"
@@ -17,11 +17,11 @@
     </div>
   </nav>
 
-  <div class="row">
-    <div class="col ">
+  <div class="sidebarr d-flex ">
+    <div class="">
       <nav
         id="sidebarMenu"
-        class=" Post  col-lg-4 col-md-3 col-sm-12 d-block vh-100 navbar-dark bg-primary sidebar collapse  "
+        class=" Post   d-block vh-100 navbar-dark bg-primary sidebar collapse  "
       >
         <div class="position-sticky pt-3">
           <p class="fs-4 text-light px-3 ">
@@ -48,6 +48,10 @@
           </ul>
         </div>
       </nav>
+    </div>
+
+    <div class="col ">
+      <router-view />
     </div>
   </div>
 </template>
@@ -93,6 +97,11 @@ export default {
 
   font-family: HelveticaNeue;
   
+}
+@media (width:576px){
+  .sidebarr{
+    display: block;
+}
 }
 
 
