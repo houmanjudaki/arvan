@@ -41,7 +41,7 @@
           Already Registered?
         </span>
 
-        <router-link to="/auth/Login">
+        <router-link to="/Auth/Login">
           <span class="Already-Registered Text-Style">
             Login
           </span>

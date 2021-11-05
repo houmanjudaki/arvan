@@ -6,7 +6,9 @@
       </span>
       <div>
         <form @submit.prevent="storePost">
-          <div class="form-group ">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group ">
             <label for="title">Title </label>
             <input
               id="title"
@@ -41,7 +43,9 @@
             type="submit"
           >
             Submit
-          </button>
+           </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>

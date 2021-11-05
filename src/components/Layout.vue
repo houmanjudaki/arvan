@@ -6,7 +6,7 @@
       <span class="Welcome-username-">
         Welcome {{ username }}
       </span>
-      <router-link to="/auth/Login">
+      <router-link to="/Auth/Login">
         <button
           type="button"
           class=" ms-auto btn btn-outline-primary"
@@ -40,7 +40,7 @@
             <li class="nav-item">
               <router-link
                 class="dropdown-item text-light px-5 nav-link"
-                to="/NewArticle"
+                to="/NewArticle/Create"
               >
                 New Article
               </router-link>

@@ -3,13 +3,12 @@
     <button
       type="button"
       class="btn btn-primary dropdown-item"
-
+      
       @click="deletePost"
     >
       Delete
     </button>
-  </li>
-  <!-- <div
+      <div
     id="exampleModal"
     class="modal fade"
     tabindex="-1"
@@ -52,7 +51,8 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+  </li>
 </template>
 
 <script>

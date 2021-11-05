@@ -35,7 +35,7 @@
           Don’t have account?
         </span>
 
-        <router-link to="/auth/Register">
+        <router-link to="/Auth/Register">
           <span class="Register-Now">
             Register Now
           </span>
