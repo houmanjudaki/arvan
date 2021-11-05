@@ -57,7 +57,7 @@
                 aria-labelledby="dropdownMenuButton1"
               >
                 <li>
-                  <router-link to="/NewArticle">
+                  <router-link to="/NewArticle/Update">
                     <a
                       class="dropdown-item"
                     >Edit</a>

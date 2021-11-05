@@ -36,14 +36,12 @@
               rows="3"
             />
           </div>
-          <router-link to="/AllArticle ">
-            <button
-              class="btn btn-primary btn-block my-3 "
-              type="submit"
-            >
-              Submit
-            </button>
-          </router-link>
+          <button
+            class="btn btn-primary btn-block my-3 "
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>
